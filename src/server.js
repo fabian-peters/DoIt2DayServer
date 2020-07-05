@@ -7,13 +7,10 @@ const bodyParser = require("body-parser");
 const errorhandler = require("errorhandler");
 const cors = require("cors");
 
-// load properties
-const PropertiesReader = require("properties-reader");
-const config = PropertiesReader("application.properties");
-
-const PORT = config.get("server.port");
-const BASE_PATH = config.getRaw("server.base.path");
-const DB_URL = config.getRaw("db.url");
+// read config
+const PORT = process.env.PORT || 4001;
+const BASE_PATH = process.env.BASE_PATH || "/api";
+const DB_URL = process.env.DB_URL;
 
 //MongoDB
 const mongoose = require("mongoose");
