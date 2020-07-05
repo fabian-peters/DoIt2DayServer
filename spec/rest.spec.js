@@ -7,9 +7,11 @@ describe('DoIt2DayServer REST API', () => {
 
     const itemsUrl = `${process.env.BASE_PATH || '/api'}/items`;
 
-    beforeAll( () => {
-        clearDatabase();
+    beforeAll(async function () {
+        await mongoose.connection.createCollection('items')
     });
+
+    afterAll(clearDatabase);
 
     let testItem = {
         _id: 'temp id',
@@ -182,6 +184,4 @@ function clearDatabase() {
     for (let collection in mongoose.connection.collections) {
         mongoose.connection.dropCollection(collection);
     }
-
-    mongoose.connection.createCollection('items');
 }
