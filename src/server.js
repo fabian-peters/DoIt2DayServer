@@ -41,3 +41,5 @@ if (process.env.NODE_ENV === 'development') {
 app.listen(PORT, () => {
     console.log(`Running DoIt2DayServer on ${PORT}`);
 });
+
+module.exports = app;
