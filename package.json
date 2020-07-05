@@ -1,0 +1,38 @@
+{
+  "name": "do-it-2day-server",
+  "version": "1.0.0",
+  "description": "Server for the DoIt2Day Angular sample app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start_local": "node -r dotenv/config src/server.js",
+    "test": "jasmine",
+    "coverage": "istanbul cover ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabian-peters/DoIt2DayServer.git"
+  },
+  "author": "fabian-peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabian-peters/DoIt2DayServer/issues"
+  },
+  "homepage": "https://github.com/fabian-peters/DoIt2DayServer#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21",
+    "morgan": "^1.10.0",
+    "npm": "^6.14.5"
+  },
+  "devDependencies": {
+    "codecov": "^3.7.0",
+    "dotenv": "^8.2.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.5.0",
+    "supertest": "^4.0.2"
+  }
+}
