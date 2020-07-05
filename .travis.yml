@@ -6,8 +6,9 @@ services:
   - mongodb
 
 env:
-  - NODE_ENV=development
-  - DB_URL=mongodb://127.0.0.1/DoIt2Day
+  global:
+    - NODE_ENV=development
+    - DB_URL=mongodb://127.0.0.1/DoIt2Day
 
 script:
   - npm run coverage
