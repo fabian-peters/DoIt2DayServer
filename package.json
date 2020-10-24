@@ -33,6 +33,6 @@
     "dotenv": "^8.2.0",
     "istanbul": "^0.4.5",
     "jasmine": "^3.6.1",
-    "supertest": "^4.0.2"
+    "supertest": "^5.0.0"
   }
 }
