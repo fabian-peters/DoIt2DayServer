@@ -32,7 +32,7 @@
     "codecov": "^3.8.0",
     "dotenv": "^8.2.0",
     "istanbul": "^0.4.5",
-    "jasmine": "^3.6.2",
+    "jasmine": "^3.6.4",
     "supertest": "^4.0.2"
   }
 }
