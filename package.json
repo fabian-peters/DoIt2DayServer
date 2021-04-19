@@ -24,7 +24,7 @@
     "cors": "^2.8.5",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
-    "mongoose": "^5.11.18",
+    "mongoose": "^5.12.4",
     "morgan": "^1.10.0",
     "npm": "^7.6.0"
   },
