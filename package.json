@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/fabian-peters/DoIt2DayServer#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.12.12",
     "morgan": "^1.10.0",
     "npm": "^8.1.1"
